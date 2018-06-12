@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.result-container {
+    text-align: center
+}
+
+.result-container > a {
+    text-decoration: underline;
+}
+
+.result-content {
+    margin-bottom: 50px;
+}
+
+.cv-box-container {
+    margin: 10% auto;
+    border: 1px solid #000;
+    padding: 20px 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.cv-box-container > h3 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cv-input-text {
+    max-width: 300px;
+}
+
+form > #submit-button {
+    margin: 40px 90px;
+}
+
+.cv-error-notif {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,12 @@
+<form #dateConverter = "ngForm" (ngSubmit) = "onSubmit(dateConverter.value)">
+  <div class="form-group">
+    <label for="inputDate">Input RFC-3399 Formatted Date</label>
+    <input required type="text" name="inputDate" id="inputDate" (change)="onChange(inputDate)" 
+      class="form-control cv-input-text" #inputDate="ngModel" ngModel/>
+  </div>
+  <button type="submit" id="submit-button" class="btn btn-default">Convert Date</button>
+
+  <div class="cv-error-notif" *ngIf="inputDate.formDirective.submitted && !inputDate.valid">
+    Field must be filled
+  </div>
+</form>
